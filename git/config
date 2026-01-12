@@ -1,0 +1,13 @@
+[core]
+	excludesfile = ~/.config/git/ignore
+	untrackedCache = true
+	preloadIndex = true
+[fetch]
+	prune = true
+[rerere]
+	enabled = true
+[branch]
+	sort = -committerdate
+[status]
+	branch = true
+	showStash = true

@@ -1,0 +1,42 @@
+## Set emacs mode
+bindkey -e
+
+## Environment variables
+source $ZDOTDIR/env.zsh
+
+## Antidote Init
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+antidote load
+
+## Init Standalones
+source <(fzf --zsh)
+
+## Aliases & Functions
+source $ZDOTDIR/aliases.zsh
+
+## Compinit
+# Export an array of files to watch
+typeset -a COMPINIT_WATCH
+COMPINIT_WATCH=(
+  "$ZDOTDIR/.zshrc"
+  "$ZDOTDIR/.zsh_plugins.zsh"
+  "$ZDOTDIR/env.zsh"
+  "$ZDOTDIR/aliases.zsh"
+  "$ZDOTDIR/functions"
+  "$ZDOTDIR/conf.d"
+  # add more files here
+)
+
+# Run compinit, refreshing cache if watched files have changed
+source "$ZDOTDIR/scripts/compinit.zsh"
+
+## Prompt
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(starship init zsh)"
+  #eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/ansi-quick-term.omp.yaml)"
+  # Setup transient prompt
+  source "$ZDOTDIR/scripts/starship-transient.zsh"
+else
+  # Simple prompt as fallback for basic terminals
+  source $ZDOTDIR/scripts/prompt_fallback.zsh
+fi

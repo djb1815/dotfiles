@@ -1,0 +1,10 @@
+# MacOS
+/Library/
+.DS_Store
+.Trash/
+.Trashes/
+
+# 
+.cache/
+.git/
+

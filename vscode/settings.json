@@ -1,0 +1,24 @@
+{
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
+    "workbench.preferredLightColorTheme": "Gruvbox Material Light",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontWeight": 400,
+    "terminal.integrated.fontWeight": 500,
+    "terminal.external.osxExec": "Ghostty.app",
+    "workbench.fontAliasing": "auto",
+    "window.autoDetectColorScheme": true,
+    "window.autoDetectHighContrast": false,
+    "window.systemColorTheme": "auto",
+    "gruvboxMaterial.lightContrast": "soft",
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "git.autofetch": true,
+}

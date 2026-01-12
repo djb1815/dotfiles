@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+code --wait --new-window "$@"
+
+return $?

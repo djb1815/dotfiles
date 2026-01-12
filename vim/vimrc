@@ -1,0 +1,53 @@
+" Enable file type detection
+filetype on
+filetype plugin on
+filetype indent on
+
+" Set scrolling options
+" - Timeouts are in milliseconds, and are shortened to improve responsiveness
+set mouse=a
+set scroll=1
+set timeoutlen=600
+set ttimeoutlen=10
+set ttyfast
+set lazyredraw
+
+" Enable line numbers
+set number
+
+" Better handling of paste operations
+set clipboard=unnamedplus
+
+" Shortcuts for copy to system clipboard (default leader key = '\')
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+
+" Enable full color support
+set termguicolors
+
+" Plugin Start - vim-plug
+call plug#begin()
+
+" Plugins
+Plug 'sainnhe/gruvbox-material'
+
+" Plugin End - vim-plug
+call plug#end()
+
+" Enable syntax highlighting
+syntax on
+
+" Fallback to built-in
+colorscheme retrobox
+
+" Fail silently if plugin not installed
+silent! colorscheme gruvbox-material
+
+" Automatically set light/dark mode based on system setting
+let theme = system('defaults read -g AppleInterfaceStyle')
+if theme =~ 'Dark'
+    set background=dark
+else
+    set background=light
+endif
+

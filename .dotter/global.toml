@@ -1,0 +1,45 @@
+[helpers]
+
+[shell]
+depends = []
+
+[shell.files]
+"shell/bat.config" = "~/.config/bat/config"
+"shell/fd.ignore" = "~/.config/fd/ignore"
+"shell/starship" = "~/.config/starship"
+"shell/ripgreprc" = "~/.ripgreprc"
+
+[zsh]
+depends = ["shell"]
+
+[zsh.files]
+# Zsh init files
+"zsh/zshenv" = "~/.zshenv"
+"zsh/zshrc" = "~/.config/zsh/.zshrc"
+# Custom env files
+"zsh/env.zsh" = "~/.config/zsh/env.zsh"
+"zsh/aliases.zsh" = "~/.config/zsh/aliases.zsh"
+"zsh/confd" = "~/.config/zsh/conf.d"
+"zsh/functions" = "~/.config/zsh/functions"
+"zsh/scripts" = "~/.config/zsh/scripts"
+# Antidote plugins
+"zsh/zsh_plugins.txt" = "~/.config/zsh/.zsh_plugins.txt"
+
+[git.files]
+"git/config" = "~/.config/git/config"
+"git/ignore" = "~/.config/git/ignore"
+
+[vim.files]
+"vim/vimrc" = "~/.vimrc"
+"vim/plug.vim" = "~/.vim/autoload/plug.vim"
+
+[vscode.files]
+"vscode/settings.json" = "~/Library/Application Support/Code/User/settings.json"
+"vscode/keybindings.json" = "~/Library/Application Support/Code/User/keybindings.json"
+"vscode/vscw" = "~/.local/bin/vscw"
+
+[ghostty.files]
+"ghostty/config" = "~/.config/ghostty/config"
+
+[settings]
+default_target_type = "automatic"

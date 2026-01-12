@@ -1,0 +1,27 @@
+## Antidote Plugin Manifest ##
+
+# OMZ Plugins - only small tools
+ohmyzsh/ohmyzsh path:plugins/isodate
+ohmyzsh/ohmyzsh path:plugins/tt
+
+# Zephyr Framework - sane defaults for zsh
+# mattmc3/zephyr path:plugins/confd
+mattmc3/zephyr path:plugins/color
+mattmc3/zephyr path:plugins/completion
+mattmc3/zephyr path:plugins/compstyle
+mattmc3/zephyr path:plugins/directory
+mattmc3/zephyr path:plugins/environment
+mattmc3/zephyr path:plugins/history
+mattmc3/zephyr path:plugins/utility
+
+# eza aliases & settings support (_EZA_PARAMS, & AUTOCD)
+z-shell/zsh-eza
+
+# z - directory jumper
+agkozak/zsh-z
+
+# Zephyr - Load custom functions
+mattmc3/zephyr path:plugins/zfunctions
+
+# Shell syntax highlighting
+zdharma-continuum/fast-syntax-highlighting
