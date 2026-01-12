@@ -1,7 +1,7 @@
 [helpers]
 
-[shell]
-depends = []
+[default]
+depends = ["zsh","git","vim","vscode","ghostty"]
 
 [shell.files]
 "shell/bat.config" = "~/.config/bat/config"
