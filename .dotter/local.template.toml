@@ -1,6 +1,15 @@
+# local.toml can "include" another file - more on this in the next section.
 includes = []
+
+# An array of the names of all packages that are selected.
+# Only the files and variables that belong to packages in this list are kept.
+# Note that in this example, the `graphics` package is automatically added as well, since `i3` depends on it.
 packages = ["default"]
 
+# File target locations can be overridden in local.toml
+# This can be useful for example for applications which read from a different location depending on the platform.
+# Disabling files is possible by setting them to the special value "".
 [files]
 
+# Any variables defined in local.toml override variables in global.toml
 [variables]
