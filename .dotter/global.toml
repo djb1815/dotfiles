@@ -17,15 +17,10 @@ depends = ["shell"]
 "zsh/zshenv" = "~/.zshenv"
 "zsh/zshrc" = "~/.config/zsh/.zshrc"
 # Custom env files
-"zsh/env.zsh" = "~/.config/zsh/env.zsh"
 "zsh/aliases.zsh" = "~/.config/zsh/aliases.zsh"
-
-#"zsh/confd" = "~/.config/zsh/conf.d"
-"zsh/functions/rgf" = "~/.config/zsh/functions/rgf"
-
-"zsh/scripts/compinit.zsh" = "~/.config/zsh/scripts/compinit.zsh"
-"zsh/scripts/prompt_fallback.zsh" = "~/.config/zsh/scripts/prompt_fallback.zsh"
-"zsh/scripts/starship-transient.zsh" = "~/.config/zsh/scripts/starship-transient.zsh"
+"zsh/confd" = "~/.config/zsh/conf.d"
+"zsh/functions" = "~/.config/zsh/functions"
+"zsh/scripts" = "~/.config/zsh/scripts"
 # Antidote plugins
 "zsh/zsh_plugins.txt" = "~/.config/zsh/.zsh_plugins.txt"
 

@@ -1,9 +1,7 @@
-#!/usr/bin/env zsh
-
-# FZF powered frontend for ripgrep file search
-# - Supports multiple selection of results to open vim quickfix
-
-function rgf() (
+#autoload
+rgf() (
+  # FZF powered frontend for ripgrep file search
+  # - Supports multiple selection of results to open vim quickfix
   RELOAD='reload:rg --column --color=always --smart-case {q} || :'
   OPENER='if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
             vim {1} +{2}     # No selection. Open the current line in Vim.
