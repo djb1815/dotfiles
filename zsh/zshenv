@@ -1,7 +1,7 @@
 export ZDOTDIR="$HOME/.config/zsh"
 
 # Add XDG standard bin dir to PATH
-PATH+=("$HOME/.local/bin")
+PATH=$PATH:$HOME/.local/bin
 
 export EDITOR=vim
 export VISUAL=vscw # Should be in XDG bin
