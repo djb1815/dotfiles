@@ -2,7 +2,6 @@
 bindkey -e
 
 ## Environment variables
-#source $ZDOTDIR/env.zsh
 ZSH_CONF_DIR="${ZDOTDIR:-$HOME/.config/zsh}/conf.d"
 
 if [[ -d $ZSH_CONF_DIR ]]; then
@@ -12,16 +11,16 @@ if [[ -d $ZSH_CONF_DIR ]]; then
     [[ -r $conf_file ]] && source "$conf_file"
   done
 fi
+unset conf_file
 
 ## Antidote Init
 source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 antidote load
 
 ## Load functions
-# Directory containing your functions (can be a symlink)
 ZSH_FUNCTIONS_DIR="${ZDOTDIR:-$HOME/.config/zsh}/functions"
 
-# Make sure it's in fpath
+# Add function dir to fpath
 [[ -d $ZSH_FUNCTIONS_DIR ]] && fpath=($ZSH_FUNCTIONS_DIR $fpath)
 
 # Autoload all functions in the directory (lazy)
@@ -29,27 +28,13 @@ ZSH_FUNCTIONS_DIR="${ZDOTDIR:-$HOME/.config/zsh}/functions"
 for func_file in "$ZSH_FUNCTIONS_DIR"/*(.N) "$ZSH_FUNCTIONS_DIR"/*(@N); do
   autoload -Uz "${func_file:t}"
 done
+unset func_file
 
 ## Init Standalones
 source <(fzf --zsh)
 
 ## Aliases & Functions
 source $ZDOTDIR/aliases.zsh
-
-## Compinit
-# Export an array of files to watch
-typeset -a COMPINIT_WATCH
-COMPINIT_WATCH=(
-  "$ZDOTDIR/.zshrc"
-  "$ZDOTDIR/.zsh_plugins.zsh"
-  "$ZDOTDIR/aliases.zsh"
-  "$ZDOTDIR/conf.d"
-  "$ZDOTDIR/functions"
-  # add more files here
-)
-
-# Run compinit, refreshing cache if watched files have changed
-source "$ZDOTDIR/scripts/compinit.zsh"
 
 ## Prompt
 if [[ "$TERM_PROGRAM" != "Apple_Terminal" && $TERM_PROGRAM != "JetBrains" ]]; then
