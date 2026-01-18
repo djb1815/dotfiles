@@ -1,5 +1,8 @@
 ## Environment Variables & Settings ##
 
+## Zephyr Framework
+zstyle ':zephyr:plugin:*' 'use-cache' yes
+
 ## starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 

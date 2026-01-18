@@ -1,3 +1,4 @@
+#zmodload zsh/zprof
 ## Set emacs mode
 bindkey -e
 
@@ -11,7 +12,7 @@ if [[ -d $ZSH_CONF_DIR ]]; then
     [[ -r $conf_file ]] && source "$conf_file"
   done
 fi
-unset conf_file
+unset conf_file ZSH_CONF_DIR
 
 ## Antidote Init
 source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
@@ -28,7 +29,7 @@ ZSH_FUNCTIONS_DIR="${ZDOTDIR:-$HOME/.config/zsh}/functions"
 for func_file in "$ZSH_FUNCTIONS_DIR"/*(.N) "$ZSH_FUNCTIONS_DIR"/*(@N); do
   autoload -Uz "${func_file:t}"
 done
-unset func_file
+unset func_file ZSH_FUNCTIONS_DIR
 
 ## Init Standalones
 source <(fzf --zsh)
@@ -45,3 +46,4 @@ else
   # Simple prompt as fallback for basic terminals
   source $ZDOTDIR/scripts/prompt_fallback.zsh
 fi
+#zprof
