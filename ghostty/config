@@ -50,7 +50,7 @@ window-height = 42
 window-width = 148
 
 window-theme = system
-theme = light:"Gruvbox Material Light", dark:"Gruvbox Material Dark"
+theme = light:"gruvbox-mat-soft-light", dark:"gruvbox-mat-med-dark"
 background-opacity = 0.90
 background-blur = true
 
