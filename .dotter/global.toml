@@ -23,6 +23,7 @@ depends = ["shell"]
 "zsh/scripts" = "~/.config/zsh/scripts"
 # Antidote plugins
 "zsh/zsh_plugins.txt" = "~/.config/zsh/.zsh_plugins.txt"
+"zsh/fast-syntax-highlighting/base16_custom.ini" = "~/.config/fsh/base16_custom.ini"
 
 [git.files]
 "git/config" = "~/.config/git/config"
