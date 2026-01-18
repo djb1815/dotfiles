@@ -40,6 +40,7 @@ depends = ["shell"]
 
 [ghostty.files]
 "ghostty/config" = "~/.config/ghostty/config"
+"ghostty/themes" = "~/.config/ghostty/themes"
 
 [settings]
 default_target_type = "automatic"
