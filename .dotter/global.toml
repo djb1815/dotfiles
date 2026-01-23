@@ -25,6 +25,8 @@ depends = ["shell"]
 # Antidote plugins
 "zsh/zsh_plugins.txt" = "~/.config/zsh/.zsh_plugins.txt"
 "zsh/fast-syntax-highlighting/base16_custom.ini" = "~/.config/fsh/base16_custom.ini"
+# Prompt
+"zsh/p10k.zsh" = "~/.config/zsh/.p10k.zsh"
 
 [git.files]
 "git/config" = "~/.config/git/config"
