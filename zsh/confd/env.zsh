@@ -1,5 +1,8 @@
 ## Environment Variables & Settings ##
 
+## Antidote Plugin Manager
+zstyle ':antidote:bundle' 'use-friendly-names' yes
+
 ## Zephyr Framework
 zstyle ':zephyr:plugin:*' 'use-cache' yes
 
