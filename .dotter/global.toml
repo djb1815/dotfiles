@@ -6,6 +6,7 @@ depends = ["zsh","git","vim","vscode","ghostty"]
 [shell.files]
 "shell/bat.config" = "~/.config/bat/config"
 "shell/fd.ignore" = "~/.config/fd/ignore"
+"shell/lazygit.yml" = "~/.config/lazygit/config.yml"
 "shell/starship" = "~/.config/starship"
 "shell/ripgreprc" = "~/.ripgreprc"
 

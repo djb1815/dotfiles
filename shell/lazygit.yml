@@ -1,0 +1,9 @@
+gui:
+  nerdFontsVersion: '3'
+  showDivergenceFromBaseBranch: 'arrowAndNumber'
+  filterMode: 'fuzzy'
+  theme:
+    selectedLineBgColor:
+      - reverse
+os:
+  editPreset: 'vscode'
