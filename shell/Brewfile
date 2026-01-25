@@ -1,5 +1,6 @@
 brew "antidote"
 brew "bat"
+brew "btop"
 brew "dotter"
 brew "eza"
 brew "fd"
