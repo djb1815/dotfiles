@@ -19,5 +19,8 @@ z-shell/zsh-eza
 # z - directory jumper
 agkozak/zsh-z
 
+# p10k prompt
+romkatv/powerlevel10k
+
 # Shell syntax highlighting
 zdharma-continuum/fast-syntax-highlighting

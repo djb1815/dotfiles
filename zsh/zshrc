@@ -37,13 +37,8 @@ source <(fzf --zsh)
 ## Aliases & Functions
 source $ZDOTDIR/aliases.zsh
 
-## Prompt
-if [[ "$TERM_PROGRAM" != "Apple_Terminal" && $TERM_PROGRAM != "JetBrains" ]]; then
-  eval "$(starship init zsh)"
-  # Setup transient prompt
-  source "$ZDOTDIR/scripts/starship-transient.zsh"
-else
-  # Simple prompt as fallback for basic terminals
-  source $ZDOTDIR/scripts/prompt_fallback.zsh
-fi
+# ## Prompt
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
 #zprof

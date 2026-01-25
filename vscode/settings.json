@@ -21,4 +21,5 @@
     "gruvboxMaterial.lightContrast": "soft",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "git.autofetch": true,
+    "gruvboxMaterial.lightPalette": "mix",
 }

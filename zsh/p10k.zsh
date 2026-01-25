@@ -37,6 +37,7 @@
     vcs                     # git status
     # =========================[ Line #2 ]=========================
     newline                 # \n
+    dir                     # current directory - hidden normally, shown in transient prompt
     prompt_char             # prompt symbol
   )
 
@@ -115,6 +116,7 @@
     # wifi                  # wifi speed
     # example               # example user-defined segment (see prompt_example function below)
     command_execution_time  # duration of the last command
+    time                    # current time - hidden normally, shown in transient prompt
   )
 
   # Defines character set used by powerlevel10k. It's best to let `p10k configure` set it for you.
@@ -1690,6 +1692,17 @@
   #   - same-dir: Trim down prompt when accepting a command line unless this is the first command
   #               typed after changing current working directory.
   typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=off
+
+  # Custom transient prompt
+  function p10k-on-pre-prompt() {
+    # Hide elements added for transient prompt display from line 2
+    # This must also toggle back items hidden for transient prompt
+    p10k display '1|2/left_frame'=show '2/left/dir|2/right/time'=hide
+  }
+  function p10k-on-post-prompt() {
+    # Hide line 1 and show hidden elements from above
+    p10k display '1|2/left_frame'=hide '2/left/dir|2/right/time'=show
+  }
 
   # Instant prompt mode.
   #
