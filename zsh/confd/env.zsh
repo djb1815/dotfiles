@@ -6,9 +6,6 @@ zstyle ':antidote:bundle' 'use-friendly-names' yes
 ## Zephyr Framework
 zstyle ':zephyr:plugin:*' 'use-cache' yes
 
-## starship
-export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
-
 ## zsh-eza
 # params to always apply
 export _EZA_PARAMS=('--group-directories-first' '--time-style=long-iso' '--colour-scale' '--colour-scale-mode=fixed' '--icons=auto')
@@ -41,9 +38,3 @@ export FZF_CTRL_R_OPTS="
 export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,Library,.Trash
   --preview 'eza --tree --icons=auto --group-directories-first --level=2 {}'"
-
-## zbell
-# seconds before zbell is enabled
-#zbell_duration=30
-# ignore list
-#zbell_ignore=($EDITOR $PAGER claude code nano vi vim)
