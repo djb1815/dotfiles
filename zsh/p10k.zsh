@@ -88,7 +88,7 @@
     context                 # user@hostname
     # nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
     # ranger                  # ranger shell (https://github.com/ranger/ranger)
-    yazi                    # yazi shell (https://github.com/sxyazi/yazi)
+    # yazi                    # yazi shell (https://github.com/sxyazi/yazi)
     # nnn                     # nnn shell (https://github.com/jarun/nnn)
     # lf                      # lf shell (https://github.com/gokcehan/lf)
     # xplr                    # xplr shell (https://github.com/sayanarijit/xplr)
@@ -398,7 +398,8 @@
       # If local branch name is at most 32 characters long, show it in full.
       # Otherwise show the first 12 … the last 12.
       # Tip: To always show local branch name in full without truncation, delete the next line.
-      (( $#branch > 32 )) && branch[13,-13]="…"  # <-- this line
+      #(( $#branch > 32 )) && branch[13,-13]="…"  # <-- this line
+      (( $#branch > 40 )) && branch[20,-12]="…"  # <-- this line
       res+="${clean}${(g::)POWERLEVEL9K_VCS_BRANCH_ICON}${branch//\%/%%}"
     fi
 
