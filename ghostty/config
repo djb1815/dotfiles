@@ -62,4 +62,7 @@ copy-on-select = clipboard
 shell-integration-features = no-cursor,ssh-env
 
 macos-option-as-alt = left
-macos-icon = retro
+macos-icon = custom-style
+macos-icon-frame = plastic
+macos-icon-ghost-color = #ffffff
+macos-icon-screen-color = #000000

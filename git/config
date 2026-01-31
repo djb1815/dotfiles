@@ -2,6 +2,7 @@
 	excludesfile = ~/.config/git/ignore
 	untrackedCache = true
 	preloadIndex = true
+	pager = delta
 [fetch]
 	prune = true
 [rerere]
@@ -11,3 +12,14 @@
 [status]
 	branch = true
 	showStash = true
+[merge]
+    conflictStyle = zdiff3
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+	line-numbers = true
+	theme = base16
+	hyperlinks = true
+    hyperlinks-file-link-format = "vscode://file/{path}:{line}"
