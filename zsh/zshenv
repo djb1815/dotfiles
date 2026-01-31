@@ -8,9 +8,3 @@ export XDG_STATE_HOME="$HOME/.local/state"
 
 # Add XDG standard bin dir to PATH
 PATH=$PATH:$HOME/.local/bin
-
-export EDITOR=vim
-export VISUAL=vscw # Should be in XDG bin
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
-eval "$(/opt/homebrew/bin/brew shellenv)"

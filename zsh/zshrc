@@ -1,8 +1,11 @@
 #zmodload zsh/zprof
 ## Set emacs mode
 bindkey -e
+bindkey "^[[3~" delete-char
 
 ## Environment variables
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ZSH_CONF_DIR="${ZDOTDIR:-$HOME/.config/zsh}/conf.d"
 
 if [[ -d $ZSH_CONF_DIR ]]; then

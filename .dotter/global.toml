@@ -16,6 +16,7 @@ depends = ["shell"]
 [zsh.files]
 # Zsh init files
 "zsh/zshenv" = "~/.zshenv"
+"zsh/zprofile" = "~/.config/zsh/.zprofile"
 "zsh/zshrc" = "~/.config/zsh/.zshrc"
 # Custom env files
 "zsh/aliases.zsh" = "~/.config/zsh/aliases.zsh"
