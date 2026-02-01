@@ -4,8 +4,8 @@
 depends = ["zsh","git","vim","vscode","ghostty"]
 
 [shell.files]
-"shell/bat.config" = "~/.config/bat/config"
-"shell/btop.conf" = "~/.config/btop/btop.conf"
+"shell/bat" = "~/.config/bat"
+"shell/btop" = "~/.config/btop"
 "shell/fd.ignore" = "~/.config/fd/ignore"
 "shell/lazygit.yml" = "~/.config/lazygit/config.yml"
 "shell/ripgreprc" = "~/.ripgreprc"
@@ -26,7 +26,7 @@ depends = ["shell"]
 "zsh/scripts" = "~/.config/zsh/scripts"
 # Antidote plugins
 "zsh/zsh_plugins.txt" = "~/.config/zsh/.zsh_plugins.txt"
-"zsh/fast-syntax-highlighting/base16_custom.ini" = "~/.config/fsh/base16_custom.ini"
+"zsh/fast-syntax-highlighting" = "~/.config/fsh"
 # Prompt
 "zsh/p10k.zsh" = "~/.config/zsh/.p10k.zsh"
 
