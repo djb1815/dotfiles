@@ -1,0 +1,12 @@
+theme = "catppuccin_macchiato"
+
+[editor]
+line-number = "relative"
+color-modes = true
+text-width = 120
+trim-trailing-whitespace = true
+
+[editor.indent-guides]
+render = true
+character = "┆" # Some characters that work well: "▏", "╎", "┆", "┊", "⸽"
+skip-levels = 1

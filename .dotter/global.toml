@@ -7,6 +7,7 @@ depends = ["zsh","git","vim","vscode","ghostty"]
 "shell/bat" = "~/.config/bat"
 "shell/btop" = "~/.config/btop"
 "shell/fd.ignore" = "~/.config/fd/ignore"
+"shell/helix" = "~/.config/helix"
 "shell/lazygit.yml" = "~/.config/lazygit/config.yml"
 "shell/ripgreprc" = "~/.ripgreprc"
 "shell/zellij/config.kdl" = "~/.config/zellij/config.kdl"
