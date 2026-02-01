@@ -30,6 +30,7 @@ call plug#begin()
 
 " Plugins
 Plug 'sainnhe/gruvbox-material'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Plugin End - vim-plug
 call plug#end()
@@ -41,13 +42,13 @@ syntax on
 colorscheme retrobox
 
 " Fail silently if plugin not installed
-silent! colorscheme gruvbox-material
+silent! colorscheme catppuccin_macchiato
 
 " Automatically set light/dark mode based on system setting
-let theme = system('defaults read -g AppleInterfaceStyle')
-if theme =~ 'Dark'
-    set background=dark
-else
-    set background=light
-endif
+" let theme = system('defaults read -g AppleInterfaceStyle')
+" if theme =~ 'Dark'
+"     set background=dark
+" else
+"     set background=light
+" endif
 

@@ -50,7 +50,8 @@ window-height = 42
 window-width = 148
 
 window-theme = system
-theme = light:"gruvbox-mat-soft-light", dark:"gruvbox-mat-med-dark"
+# theme = light:"gruvbox-mat-soft-light", dark:"gruvbox-mat-med-dark"
+theme = Catppuccin Macchiato
 background-opacity = 0.90
 background-blur = true
 
@@ -62,6 +63,7 @@ copy-on-select = clipboard
 shell-integration-features = no-cursor,ssh-env
 
 macos-option-as-alt = left
+macos-titlebar-proxy-icon = hidden
 macos-icon = custom-style
 macos-icon-frame = plastic
 macos-icon-ghost-color = #ffffff

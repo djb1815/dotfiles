@@ -9,6 +9,7 @@ depends = ["zsh","git","vim","vscode","ghostty"]
 "shell/fd.ignore" = "~/.config/fd/ignore"
 "shell/lazygit.yml" = "~/.config/lazygit/config.yml"
 "shell/ripgreprc" = "~/.ripgreprc"
+"shell/zellij/config.kdl" = "~/.config/zellij/config.kdl"
 
 [zsh]
 depends = ["shell"]

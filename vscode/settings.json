@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Gruvbox Material Dark",
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
@@ -15,7 +14,6 @@
     "terminal.integrated.fontWeight": 500,
     "terminal.external.osxExec": "Ghostty.app",
     "workbench.fontAliasing": "auto",
-    "window.autoDetectColorScheme": true,
     "window.autoDetectHighContrast": false,
     "window.systemColorTheme": "auto",
     "gruvboxMaterial.lightContrast": "soft",
@@ -23,4 +21,5 @@
     "git.autofetch": true,
     "gruvboxMaterial.lightPalette": "mix",
     "security.promptForLocalFileProtocolHandling": false,
+    "workbench.colorTheme": "Kanagawa Wave",
 }
