@@ -18,6 +18,9 @@ set number
 " Better handling of paste operations
 set clipboard=unnamedplus
 
+" Set leader key to space
+let mapleader = " "
+
 " Shortcuts for copy to system clipboard (default leader key = '\')
 nnoremap <leader>y "+y
 vnoremap <leader>y "+y
