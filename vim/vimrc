@@ -22,6 +22,14 @@ set wrapmargin=0
 
 " Enable line numbers
 set number relativenumber
+set scrolloff=5
+
+" Better handling of paste operations
+set clipboard=unnamedplus
+
+" Case-insensitive search, unless uppercase present
+set ignorecase
+set smartcase
 
 " Set leader key to space
 let mapleader = " "
