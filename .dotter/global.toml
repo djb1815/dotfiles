@@ -6,6 +6,7 @@ depends = ["zsh","git","vim","vscode","ghostty"]
 [shell.files]
 "shell/bat" = "~/.config/bat"
 "shell/btop" = "~/.config/btop"
+"shell/eza-theme.yml" = "~/.config/eza/theme.yml" # MacOS requires additional symlink created under ~/Library/Application Support/eza/theme.yml
 "shell/fd.ignore" = "~/.config/fd/ignore"
 "shell/helix" = "~/.config/helix"
 "shell/lazygit.yml" = "~/.config/lazygit/config.yml"

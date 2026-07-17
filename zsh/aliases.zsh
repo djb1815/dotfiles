@@ -19,6 +19,9 @@ alias l="eza -l $eza_params"
 alias ~="cd ~"
 alias ..="cd .."
 
+# nvim
+alias vi="nvim"
+
 # z -> fzf -> cd - Use fzf as an improved fronted for zsh-z
 unalias z 2> /dev/null
 compdef _zshz z

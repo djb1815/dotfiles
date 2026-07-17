@@ -1,11 +1,12 @@
 theme = "catppuccin_macchiato"
 
 [editor]
-evil = true # Use traditional vim keybinds 
+evil = false # Use traditional vim keybinds
 line-number = "relative"
 color-modes = true
 text-width = 120
 trim-trailing-whitespace = true
+soft-wrap.enable = true
 
 [editor.indent-guides]
 render = true

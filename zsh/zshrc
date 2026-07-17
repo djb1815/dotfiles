@@ -11,11 +11,14 @@ ZSH_CONF_DIR="${ZDOTDIR:-$HOME/.config/zsh}/conf.d"
 if [[ -d $ZSH_CONF_DIR ]]; then
   # Use a glob that follows symlinks and sorts lexicographically
   # *.zsh files only; nullglob prevents errors if no match
-  for conf_file in $(print -rl -- "$ZSH_CONF_DIR"/*.{z,}sh(N) | sort); do 
+  for conf_file in $(print -rl -- "$ZSH_CONF_DIR"/*.{z,}sh(N) | sort); do
     [[ -r $conf_file ]] && source "$conf_file"
   done
 fi
 unset conf_file ZSH_CONF_DIR
+
+# Mise environment
+eval "$(mise activate zsh)"
 
 ## Antidote Init
 source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh

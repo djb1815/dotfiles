@@ -12,11 +12,16 @@ set ttimeoutlen=10
 set ttyfast
 set lazyredraw
 
-" Enable line numbers
-set number
+" Increase max pattern length, prevents syntax highlighting errors w/long
+" strings
+set maxmempattern=5000
 
-" Better handling of paste operations
-set clipboard=unnamedplus
+" Line break settings
+set textwidth=0
+set wrapmargin=0
+
+" Enable line numbers
+set number relativenumber
 
 " Set leader key to space
 let mapleader = " "

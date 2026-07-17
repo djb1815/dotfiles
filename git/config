@@ -3,6 +3,8 @@
     untrackedCache = true
     preloadIndex = true
     pager = delta
+[pull]
+    ff = only
 [fetch]
     prune = true
 [rerere]
@@ -61,3 +63,4 @@
         bold yellow => syntax "#6a635d"
     # Should match the name of the bat theme
     syntax-theme = Catppuccin Macchiato
+
