@@ -11,7 +11,6 @@ export HOMEBREW_NO_ASK=1
 
 ## zsh-eza
 # params to always apply
-export _EZA_PARAMS=('--group-directories-first' '--time-style=long-iso' '--color-scale' '--color-scale-mode=fixed' '--icons=auto')
 export EZA_MIN_LUMINANCE=65
 # enable auto list directories on cd = 1 to enable
 export AUTOCD=0
