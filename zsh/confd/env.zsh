@@ -9,11 +9,14 @@ zstyle ':zephyr:plugin:*' 'use-cache' yes
 ## Homebrew
 export HOMEBREW_NO_ASK=1
 
-## zsh-eza
-# params to always apply
+## eza
 export EZA_MIN_LUMINANCE=65
-# enable auto list directories on cd = 1 to enable
-export AUTOCD=0
+
+typeset -ga _EZA_ALIAS_PARAMS
+_EZA_ALIAS_PARAMS=(
+  '--git' '--icons' '--group' '--group-directories-first'
+  '--time-style=long-iso' '--color-scale=all'
+)
 
 # z (zshz)
 export ZSHZ_DATA="${ZDOTDIR:-$HOME}/.z"

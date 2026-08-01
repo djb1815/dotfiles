@@ -12,8 +12,15 @@ function vsc {
 alias vscd="code --diff"
 
 # eza - ls replacement
-alias lm="eza -l --sort modified $eza_params"
-alias l="eza -l $eza_params"
+alias ls='eza ${(@)_EZA_ALIAS_PARAMS}' # plain listing
+alias l='eza --header --long ${(@)_EZA_ALIAS_PARAMS}' # detailed listing
+alias lm='eza --header --long --sort=modified ${(@)_EZA_ALIAS_PARAMS}' # detailed listing sorted by modified time
+alias ll='eza --all --header --long ${(@)_EZA_ALIAS_PARAMS}' # detailed listing incl. hidden files
+alias llm='eza --all --header --long --sort=modified ${(@)_EZA_ALIAS_PARAMS}' # detailed listing incl. hidden, sorted by modified time
+alias la='eza -lbhHigUmuSa' # detailed listing, no icons/git/grouping
+alias lx='eza -lbhHigUmuSa@' # detailed listing, no icons/git/grouping, with extended attrs
+alias lt='eza --tree ${(@)_EZA_ALIAS_PARAMS}' # tree view
+alias tree='eza --tree ${(@)_EZA_ALIAS_PARAMS}' # tree view
 
 # cd
 alias ~="cd ~"

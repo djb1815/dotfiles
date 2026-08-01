@@ -13,9 +13,6 @@ mattmc3/zephyr path:plugins/environment
 mattmc3/zephyr path:plugins/history
 mattmc3/zephyr path:plugins/utility
 
-# eza aliases & settings support (_EZA_PARAMS, & AUTOCD)
-z-shell/zsh-eza
-
 # z - directory jumper
 agkozak/zsh-z
 
