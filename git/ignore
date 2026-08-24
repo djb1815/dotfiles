@@ -1,8 +1,15 @@
-.claude/*.local.*
 worktree/**
 mise.local.toml
 
-
+# Claude Code
+.claude/*.local.*
 **/.claude/settings.local.json
-
 **/.claude/.cc-writes/
+
+# Secrets
+*.jks
+*.key
+*.keytab
+*.pem
+*.p12
+
