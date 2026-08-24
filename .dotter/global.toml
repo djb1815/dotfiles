@@ -1,7 +1,7 @@
 [helpers]
 
 [default]
-depends = ["zsh","git","nvim","vim","vscode","ghostty"]
+depends = ["zsh","fish","git","nvim","vim","vscode","ghostty"]
 
 [shell.files]
 "shell/bat" = "~/.config/bat"
@@ -31,6 +31,14 @@ depends = ["shell"]
 "zsh/fast-syntax-highlighting" = "~/.config/fsh"
 # Prompt
 "zsh/p10k.zsh" = "~/.config/zsh/.p10k.zsh"
+
+[fish]
+depends = ["shell"]
+
+[fish.files]
+"fish/config.fish" = "~/.config/fish/config.fish"
+"fish/conf.d" = "~/.config/fish/conf.d"
+"fish/functions" = "~/.config/fish/functions"
 
 [git.files]
 "git/config" = "~/.config/git/config"
