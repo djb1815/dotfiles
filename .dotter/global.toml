@@ -5,6 +5,8 @@ depends = ["zsh","fish","git","nvim","vim","vscode","ghostty"]
 
 [shell.files]
 "shell/bat" = "~/.config/bat"
+"shell/broot" = "~/.config/broot"
+"shell/broot/launcher/fish/br.fish" = "~/.config/fish/functions/br.fish"
 "shell/btop" = "~/.config/btop"
 "shell/diffnav.yml" = "~/.config/diffnav/config.yml"
 "shell/eza-theme.yml" = "~/.config/eza/theme.yml" # MacOS requires additional symlink created under ~/Library/Application Support/eza/theme.yml
