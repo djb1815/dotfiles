@@ -10,7 +10,7 @@ depends = ["zsh","fish","git","nvim","vim","vscode","ghostty"]
 "shell/fd.ignore" = "~/.config/fd/ignore"
 "shell/helix" = "~/.config/helix"
 "shell/lazygit.yml" = "~/.config/lazygit/config.yml"
-"shell/ripgreprc" = "~/.ripgreprc"
+"shell/ripgreprc" = "~/.config/ripgrep/config"
 "shell/zellij/config.kdl" = "~/.config/zellij/config.kdl"
 
 [zsh]

@@ -18,7 +18,10 @@ _EZA_ALIAS_PARAMS=(
   '--time-style=long-iso' '--color-scale=all'
 )
 
-# z (zshz)
+## ripgrep
+export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/config"
+
+## z (zshz)
 export ZSHZ_DATA="${ZDOTDIR:-$HOME}/.z"
 export ZSHZ_CASE=smart
 
