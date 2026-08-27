@@ -19,6 +19,8 @@
     tool = vscode
 [mergetool "vscode"]
     cmd = code --wait --new-window --merge $REMOTE $LOCAL $BASE $MERGED
+[pager]
+    diff = diffnav
 [diff]
     tool = vscode
 [difftool "vscode"]
