@@ -52,9 +52,15 @@ now_if_args(function()
   -- for the installation to finish before opening a file for added language(s).
   local languages = {
     -- These are already pre-installed with Neovim. Used as an example.
+    'bash',
+    'fish',
+    'json',
     'lua',
-    'vimdoc',
     'markdown',
+    'toml',
+    'vimdoc',
+    'yaml',
+    'zsh',
     -- Add here more languages with which you want to use tree-sitter
     -- To see available languages:
     -- - Execute `:=require('nvim-treesitter').get_available()`
