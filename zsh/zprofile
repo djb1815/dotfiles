@@ -1,6 +1,6 @@
 export EDITOR=nvim
-export VISUAL=vscw # Should be in XDG bin
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export LESSOPEN='|bat --paging=never --color=always %s'
 
 # mise - add shims to PATH
 eval "$(mise activate zsh --shims)"

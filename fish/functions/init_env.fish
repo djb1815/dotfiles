@@ -5,6 +5,7 @@ function init_env --description 'Set up common environment variable defaults'
     set -q VISUAL; or set -gx VISUAL vscw
     set -q MANPAGER; or set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
     set -q LESS; or set -gx LESS '-g -i -M -R -S -w -z-4'
+    set -q LESSOPEN; or set -gx LESSOPEN '|bat --paging=never --color=always %s'
 
     # Colorize less (bare `less <file>` usage; man/git already colorize via bat/delta).
     set -q LESS_TERMCAP_mb; or set -gx LESS_TERMCAP_mb (set_color -o blue)
