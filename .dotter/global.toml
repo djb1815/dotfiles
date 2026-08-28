@@ -39,9 +39,7 @@ depends = ["shell"]
 depends = ["shell"]
 
 [fish.files]
-"fish/config.fish" = "~/.config/fish/config.fish"
-"fish/conf.d" = "~/.config/fish/conf.d"
-"fish/functions" = "~/.config/fish/functions"
+"fish" = "~/.config/fish"
 
 [git.files]
 "git/config" = "~/.config/git/config"
