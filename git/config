@@ -14,15 +14,31 @@
 [status]
     branch = true
     showStash = true
-[merge]
-    conflictStyle = zdiff3
-    tool = vscode
-[mergetool "vscode"]
-    cmd = code --wait --new-window --merge $REMOTE $LOCAL $BASE $MERGED
 [pager]
     diff = diffnav
+
+[merge]
+    conflictStyle = zdiff3
+    tool = ec
+    guitool = intellij
+[mergetool]
+    keepBackup = false
+[mergetool "ec"]
+    cmd = ec "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+    trustExitCode = true
+[mergetool "intellij"]
+    cmd = idea merge "$LOCAL" "$REMOTE" "$MERGED"
+    trustExitCode = true
+[mergetool "vscode"]
+    cmd = code --wait --new-window --merge $REMOTE $LOCAL $BASE $MERGED
+
 [diff]
-    tool = vscode
+    tool = nvim
+    guitool = intellij
+[difftool "nvim"]
+    cmd = nvim -d "$LOCAL" "$REMOTE"
+[difftool "intellij"]
+    cmd = idea diff "$LOCAL" "$REMOTE"
 [difftool "vscode"]
     cmd = code --wait --new-window --diff $LOCAL $REMOTE
 [interactive]

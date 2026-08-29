@@ -1,0 +1,65 @@
+{
+  "default": "catppuccin-macchiato",
+  "themes": {
+    "catppuccin-macchiato": {
+      "title_fg": "#cad3f5",
+
+      "pane_border": "#494d64",
+      "selected_pane_border": "#b7bdf8",
+      "side_pane_border": "#363a4f",
+      "selected_side_border": "#8aadf4",
+
+      "header_bg": "#1e2030",
+      "header_fg": "#cad3f5",
+      "footer_bg": "#1e2030",
+      "footer_fg": "#a5adcb",
+
+      "line_number": "#6e738d",
+
+      "ours_highlight_bg": "#3e4b4c",
+      "ours_highlight_fg": "#a6da95",
+
+      "theirs_highlight_bg": "#4c3a4c",
+      "theirs_highlight_fg": "#ed8796",
+
+      "result_fg": "#cad3f5",
+      "result_highlight_bg": "#363a4f",
+      "result_highlight_fg": "#b7bdf8",
+
+      "modified_bg": "#363a4f",
+      "modified_fg": "#8aadf4",
+
+      "added_bg": "#3e4b4c",
+      "added_fg": "#a6da95",
+
+      "removed_bg": "#4c3a4c",
+      "removed_fg": "#ed8796",
+
+      "conflicted_bg": "#6a485a",
+      "conflicted_fg": "#ed8796",
+
+      "insert_marker_fg": "#a6da95",
+
+      "selected_hunk_marker_fg": "#24273a",
+      "selected_hunk_marker_bg": "#b7bdf8",
+      "selected_hunk_bg": "#363a4f",
+
+      "status_resolved_fg": "#a6da95",
+      "status_unresolved_fg": "#ed8796",
+
+      "result_resolved_marker_fg": "#a6da95",
+      "result_resolved_border": "#a6da95",
+      "result_unresolved_border": "#ed8796",
+
+      "toast_bg": "#363a4f",
+      "toast_fg": "#cad3f5",
+
+      "selector_resolved_fg": "#a6da95",
+      "selector_unresolved_fg": "#ed8796",
+
+      "dim_foreground_light": "#a5adcb",
+      "dim_foreground_dark": "#494d64",
+      "dim_foreground_muted": "#6e738d"
+    }
+  }
+}
