@@ -51,10 +51,16 @@ now_if_args(function()
   -- After changing this, restart Neovim once to install necessary parsers. Wait
   -- for the installation to finish before opening a file for added language(s).
   local languages = {
-    -- These are already pre-installed with Neovim. Used as an example.
     'bash',
     'fish',
+    'git_config',
+    'git_rebase',
+    'gitattributes',
+    'gitcommit',
+    'gitignore',
+    'hjson',
     'json',
+    'kdl',
     'lua',
     'markdown',
     'toml',

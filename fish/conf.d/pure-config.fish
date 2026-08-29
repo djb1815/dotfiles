@@ -12,5 +12,7 @@ set -g pure_show_jobs true
 set -g pure_shorten_window_title_current_directory_length 3
 
 # colors
+set -g pure_color_success 'green'
 set -g pure_color_git_branch 'green'
-set -g pure_color_git_dirty 'yellow'
+set -g pure_color_git_dirty 'magenta'
+
