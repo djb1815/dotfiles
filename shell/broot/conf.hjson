@@ -24,7 +24,7 @@
 # you can launch broot with `br -H`).
 # A popular flag is the `g` one which displays git related info.
 #
-# default_flags:
+default_flags:"-g"
 
 ###############################################################
 # Terminal's title
@@ -36,6 +36,7 @@
 # terminal_title: "{file} 🐄"
 # terminal_title: "-= {file-name} =-"
 # reset_terminal_title_on_exit: false
+terminal_title: "[broot] {file-name}"
 
 ###############################################################
 # Date/Time format
@@ -43,7 +44,7 @@
 # following line and change it according to
 # https://docs.rs/chrono/0.4.11/chrono/format/strftime/index.html
 #
-# date_time_format: %Y/%m/%d %R
+date_time_format: %Y-%m-%d %R
 
 ###############################################################
 # uncomment to activate modal mode
@@ -53,8 +54,8 @@
 #
 # You may start either in 'command' mode, or in 'input' mode
 #
-# modal: true
-# initial_mode: command
+modal: true
+initial_mode: command
 
 ###############################################################
 # Whether to mark the selected line with a triangle
@@ -94,13 +95,13 @@ show_selection_mark: true
 # (see https://dystroy.org/broot/icons for installation and
 # troubleshooting)
 #
-# icon_theme: vscode
+icon_theme: nerdfont
 
 ###############################################################
 # Special paths
 # If some paths must be handled specially, uncomment (and change
 # this section as per the examples)
-# Setting "list":"never" on a dir prevents broot from looking at its 
+# Setting "list":"never" on a dir prevents broot from looking at its
 #  children when searching, unless the dir is the selected root.
 # Setting "sum":"never" on a dir prevents broot from looking at its
 #  children when computing the total size and count of files.
@@ -290,7 +291,8 @@ imports: [
             unknown
         ]
         # (un)comment to choose your preferred skin
-        file: skins/dark-blue.hjson
+        file: skins/catppuccin-macchiato-mauve.hjson
+        //file: skins/dark-blue.hjson
         //file: skins/catppuccin-macchiato.hjson
         //file: skins/catppuccin-mocha.hjson
         //file: skins/dark-gruvbox.hjson
@@ -302,7 +304,8 @@ imports: [
     {
         luma: light
         # (un)comment to choose your preferred skin
+        file: skins/catppuccin-latte-mauve.hjson
         //file: skins/solarized-light.hjson
-        file: skins/white.hjson
+        //file: skins/white.hjson
     }
 ]

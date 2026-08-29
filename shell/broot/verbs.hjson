@@ -105,7 +105,7 @@ verbs: [
     {
         invocation: terminal
         key: ctrl-t
-        execution: "$SHELL"
+        execution: "zellij run --floating -- $SHELL"
         set_working_dir: true
         leave_broot: false
     }
