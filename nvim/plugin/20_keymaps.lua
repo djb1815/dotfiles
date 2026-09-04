@@ -246,4 +246,11 @@ nmap_leader('vv', '<Cmd>lua MiniVisits.add_label("core")<CR>',    'Add "core" la
 nmap_leader('vV', '<Cmd>lua MiniVisits.remove_label("core")<CR>', 'Remove "core" label')
 nmap_leader('vl', '<Cmd>lua MiniVisits.add_label()<CR>',          'Add label')
 nmap_leader('vL', '<Cmd>lua MiniVisits.remove_label()<CR>',       'Remove label')
+
+-- y is for 'Yank' to system clipboard. Common usage:
+-- - `<Leader>yy`  - yank line to clipboard.
+-- - `<Leader>yap` - yank paragraph to clipboard.
+nmap_leader('y', '"+y', 'Yank to system clipboard')
+
+xmap_leader('y', '"+y', 'Yank to system clipboard')
 -- stylua: ignore end
