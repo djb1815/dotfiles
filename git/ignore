@@ -3,6 +3,7 @@ mise.local.toml
 
 # Claude Code
 .claude/*.local.*
+.claude/worktrees
 **/.claude/settings.local.json
 **/.claude/.cc-writes/
 
