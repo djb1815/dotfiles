@@ -5,8 +5,6 @@ depends = ["zsh","fish","git","nvim","vim","vscode","ghostty"]
 
 [shell.files]
 "shell/bat" = "~/.config/bat"
-"shell/broot" = "~/.config/broot"
-"shell/broot/launcher/fish/br.fish" = "~/.config/fish/functions/br.fish"
 "shell/btop" = "~/.config/btop"
 "shell/diffnav.yml" = "~/.config/diffnav/config.yml"
 "shell/ec_themes.json" = "~/.config/ec/themes.json"
