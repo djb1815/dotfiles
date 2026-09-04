@@ -30,6 +30,7 @@ gui:
 os:
   editPreset: 'vscode'
 git:
+  overrideGpg: true
   diffRenderers:
     - command: delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
     - command: delta --light --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
