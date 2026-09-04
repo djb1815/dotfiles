@@ -1,10 +1,10 @@
 function rgf --description 'fzf powered frontend for ripgrep file search'
     set -l RELOAD 'reload:rg --column --color=always --smart-case {q} || :'
-    set -l OPENER 'if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
+    set -l OPENER 'if test $FZF_SELECT_COUNT -eq 0
             nvim {1} +{2}     # No selection. Open the current line in Vim.
           else
             nvim +cw -q {+f}  # Build quickfix list for the selected items.
-          fi'
+          end'
     fzf --disabled --ansi --multi \
         --bind "start:$RELOAD" --bind "change:$RELOAD" \
         --bind "enter:become:$OPENER" \
