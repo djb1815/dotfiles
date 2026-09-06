@@ -1,0 +1,13 @@
+# Read-only Git operations
+prefix_rule(pattern=["git", "status"], decision="allow")
+prefix_rule(pattern=["git", "diff"], decision="allow")
+prefix_rule(pattern=["git", "log"], decision="allow")
+prefix_rule(pattern=["git", "show"], decision="allow")
+prefix_rule(pattern=["git", "branch"], decision="allow")
+
+# Normal local working-tree/index operations
+prefix_rule(pattern=["git", "add"], decision="allow")
+prefix_rule(pattern=["git", "restore", "--staged"], decision="allow")
+
+# Local milestone commits
+prefix_rule(pattern=["git", "commit"], decision="allow")

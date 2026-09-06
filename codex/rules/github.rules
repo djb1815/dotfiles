@@ -1,0 +1,31 @@
+# GitHub Read-Only commands
+prefix_rule(
+    pattern = ["gh", "pr", ["view", "list", "status", "checks", "diff"]],
+    decision = "allow",
+    justification = "Allow read-only inspection of GitHub pull requests.",
+)
+prefix_rule(
+    pattern = ["gh", "issue", ["view", "list", "status"]],
+    decision = "allow",
+    justification = "Allow read-only inspection of GitHub issues.",
+)
+prefix_rule(
+    pattern = ["gh", "repo", "view"],
+    decision = "allow",
+    justification = "Allow read-only repository inspection.",
+)
+prefix_rule(
+    pattern = ["gh", "run", ["view", "list"]],
+    decision = "allow",
+    justification = "Allow read-only inspection of GitHub Actions runs.",
+)
+prefix_rule(
+    pattern = ["gh", "workflow", ["view", "list"]],
+    decision = "allow",
+    justification = "Allow read-only inspection of GitHub Actions workflows.",
+)
+prefix_rule(
+    pattern = ["gh", "auth", "status"],
+    decision = "allow",
+    justification = "Allow checking GitHub CLI authentication status.",
+)

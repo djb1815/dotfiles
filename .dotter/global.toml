@@ -56,6 +56,9 @@ depends = ["shell"]
 "vscode/keybindings.json" = "~/Library/Application Support/Code/User/keybindings.json"
 "vscode/vscw" = "~/.local/bin/vscw"
 
+[codex.files]
+"codex" = {target = "~/.codex", type = "template"}
+
 [ghostty.files]
 "ghostty/config" = "~/.config/ghostty/config"
 "ghostty/themes" = "~/.config/ghostty/themes"
