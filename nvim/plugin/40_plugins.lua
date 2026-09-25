@@ -138,13 +138,30 @@ later(function()
   -- - `:h conform-options`
   -- - `:h conform-formatters`
   require('conform').setup({
+
     default_format_opts = {
       -- Allow formatting from LSP server if no dedicated formatter is available
       lsp_format = 'fallback',
     },
     -- Map of filetype to formatters
     -- Make sure that necessary CLI tool is available
-    -- formatters_by_ft = { lua = { 'stylua' } },
+    formatters_by_ft = {
+      lua = { "stylua" },
+      fish = { "fish_indent" },
+
+      sh = { "shfmt" },
+      bash = { "shfmt" },
+      zsh = { "shfmt" },
+
+      rust = { "rustfmt" },
+
+      toml = { "taplo" },
+
+      json = { "prettier" },
+      jsonc = { "prettier" },
+      yaml = { "prettier" },
+      markdown = { "prettier" },
+    },
   })
 end)
 
@@ -167,12 +184,24 @@ later(function() add({ 'https://github.com/rafamadriz/friendly-snippets' }) end)
 --
 -- The caveat is that these programs will be set up to be mostly used inside Neovim.
 -- If you need them to work elsewhere, consider using other package managers.
---
--- You can use it like so:
--- now_if_args(function()
---   add({ 'https://github.com/mason-org/mason.nvim' })
---   require('mason').setup()
--- end)
+now_if_args(function()
+  add({ 'https://github.com/mason-org/mason.nvim' })
+  -- extra tool for declarative installs
+  add({ 'https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim' })
+
+  -- init mason
+  require('mason').setup()
+
+  -- declare tool installs
+  require('mason-tool-installer').setup({
+    ensure_installed = {
+      'stylua',
+      'shfmt',
+      'taplo',
+      'prettier',
+    },
+  })
+end)
 
 -- Beautiful, usable, well maintained color schemes outside of 'mini.nvim' and
 -- have full support of its highlight groups. Use if you don't like 'miniwinter'
