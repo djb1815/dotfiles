@@ -22,4 +22,5 @@
     "gruvboxMaterial.lightPalette": "mix",
     "security.promptForLocalFileProtocolHandling": false,
     "workbench.colorTheme": "Catppuccin Macchiato",
+    "lldb-dap.executable-path": "/Library/Developer/CommandLineTools/usr/bin/lldb-dap",
 }
